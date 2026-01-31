@@ -18,63 +18,119 @@ public class QuizApplication {
 	CommandLineRunner initDatabase(QuestionDao repository) {
 		return args -> {
 
-			Question q1 = new Question();
-			q1.setQuestionTilte("If A is 50% more than B, then B is what percent less than A?");
-			q1.setOption1("33.33%");
-			q1.setOption2("25%");
-			q1.setOption3("40%");
-			q1.setOption4("50%");
-			q1.setRightAnswer("33.33%");
-			q1.setDificultyLevel("Medium");
-			q1.setCategory("math");
+			Question s1 = new Question();
+			s1.setQuestionTilte("48.6 ÷ 2.7 + (35% of 420) - 18");
+			s1.setOption1("120");
+			s1.setOption2("118");
+			s1.setOption3("122");
+			s1.setOption4("115");
+			s1.setRightAnswer("120");
+			s1.setDificultyLevel("Hard");
+			s1.setCategory("simplification");
 
-			Question q2 = new Question();
-			q2.setQuestionTilte("A train 180 m long crosses a man in 6 seconds. What is the speed of the train?");
-			q2.setOption1("108 km/h");
-			q2.setOption2("90 km/h");
-			q2.setOption3("120 km/h");
-			q2.setOption4("150 km/h");
-			q2.setRightAnswer("108 km/h");
-			q2.setDificultyLevel("Medium");
-			q2.setCategory("math");
+			Question s2 = new Question();
+			s2.setQuestionTilte("√1444 + 18.5 × 4 - 96 ÷ 3");
+			s2.setOption1("116");
+			s2.setOption2("112");
+			s2.setOption3("120");
+			s2.setOption4("108");
+			s2.setRightAnswer("112");
+			s2.setDificultyLevel("Hard");
+			s2.setCategory("simplification");
 
-			Question q3 = new Question();
-			q3.setQuestionTilte("The ratio of ages of A and B is 4:5. After 8 years, the ratio becomes 5:6. What is B’s present age?");
-			q3.setOption1("20");
-			q3.setOption2("24");
-			q3.setOption3("30");
-			q3.setOption4("40");
-			q3.setRightAnswer("40");
-			q3.setDificultyLevel("Hard");
-			q3.setCategory("math");
+			Question s3 = new Question();
+			s3.setQuestionTilte("225% of 96 - (14.4 × 3) + 22");
+			s3.setOption1("160");
+			s3.setOption2("165");
+			s3.setOption3("150");
+			s3.setOption4("155");
+			s3.setRightAnswer("160");
+			s3.setDificultyLevel("Hard");
+			s3.setCategory("simplification");
 
-			Question q4 = new Question();
-			q4.setQuestionTilte("If the average of five numbers is 28, what is the total sum?");
-			q4.setOption1("140");
-			q4.setOption2("150");
-			q4.setOption3("120");
-			q4.setOption4("135");
-			q4.setRightAnswer("140");
-			q4.setDificultyLevel("Easy");
-			q4.setCategory("math");
+			Question s4 = new Question();
+			s4.setQuestionTilte("(56 ÷ 7) × (15.6 ÷ 1.3) + 12.5");
+			s4.setOption1("107.5");
+			s4.setOption2("96");
+			s4.setOption3("102");
+			s4.setOption4("110");
+			s4.setRightAnswer("107.5");
+			s4.setDificultyLevel("Hard");
+			s4.setCategory("simplification");
 
-			Question q5 = new Question();
-			q5.setQuestionTilte("A man invests ₹5000 at 12% simple interest. What will be the interest after 3 years?");
-			q5.setOption1("₹1800");
-			q5.setOption2("₹1500");
-			q5.setOption3("₹2000");
-			q5.setOption4("₹1750");
-			q5.setRightAnswer("₹1800");
-			q5.setDificultyLevel("Easy");
-			q5.setCategory("math");
+			Question s5 = new Question();
+			s5.setQuestionTilte("78.4 - 16.8 + 24.5 × 3 - √625");
+			s5.setOption1("122.1");
+			s5.setOption2("118.1");
+			s5.setOption3("120.1");
+			s5.setOption4("116.1");
+			s5.setRightAnswer("122.1");
+			s5.setDificultyLevel("Hard");
+			s5.setCategory("simplification");
 
-			repository.save(q1);
-			repository.save(q2);
-			repository.save(q3);
-			repository.save(q4);
-			repository.save(q5);
+			Question s6 = new Question();
+			s6.setQuestionTilte("48 × 2.5 + (18% of 240) - 36 ÷ 1.5");
+			s6.setOption1("150");
+			s6.setOption2("160");
+			s6.setOption3("168");
+			s6.setOption4("174");
+			s6.setRightAnswer("168");
+			s6.setDificultyLevel("Hard");
+			s6.setCategory("simplification");
 
-			System.out.println("Dummy Reasoning Questions Inserted into H2 Database!");
+			Question s7 = new Question();
+			s7.setQuestionTilte("(45.5 × 4) - (22.75 × 2) + 18");
+			s7.setOption1("140");
+			s7.setOption2("135");
+			s7.setOption3("125");
+			s7.setOption4("132");
+			s7.setRightAnswer("132");
+			s7.setDificultyLevel("Hard");
+			s7.setCategory("simplification");
+
+			Question s8 = new Question();
+			s8.setQuestionTilte("(32% of 750) + 19.2 ÷ 0.4");
+			s8.setOption1("316");
+			s8.setOption2("300");
+			s8.setOption3("310");
+			s8.setOption4("326");
+			s8.setRightAnswer("316");
+			s8.setDificultyLevel("Hard");
+			s8.setCategory("simplification");
+
+			Question s9 = new Question();
+			s9.setQuestionTilte("144 ÷ 1.2 + 36 × 1.5 - 72");
+			s9.setOption1("180");
+			s9.setOption2("162");
+			s9.setOption3("168");
+			s9.setOption4("174");
+			s9.setRightAnswer("174");
+			s9.setDificultyLevel("Hard");
+			s9.setCategory("simplification");
+
+			Question s10 = new Question();
+			s10.setQuestionTilte("96 ÷ 0.75 + 12.5 × 4 - √1296");
+			s10.setOption1("152");
+			s10.setOption2("160");
+			s10.setOption3("148");
+			s10.setOption4("158");
+			s10.setRightAnswer("160");
+			s10.setDificultyLevel("Hard");
+			s10.setCategory("simplification");
+
+			repository.save(s1);
+			repository.save(s2);
+			repository.save(s3);
+			repository.save(s4);
+			repository.save(s5);
+			repository.save(s6);
+			repository.save(s7);
+			repository.save(s8);
+			repository.save(s9);
+			repository.save(s10);
+
+			System.out.println("Simplification Questions Inserted!");
 		};
 	}
+
 }
