@@ -18,105 +18,109 @@ public class QuizApplication {
 	CommandLineRunner initDatabase(QuestionDao repository) {
 		return args -> {
 
+			// ================= Simplification Question Set =================
+
 			Question s1 = new Question();
 			s1.setQuestionTilte("48.6 ÷ 2.7 + (35% of 420) - 18");
-			s1.setOption1("120");
-			s1.setOption2("118");
-			s1.setOption3("122");
-			s1.setOption4("115");
-			s1.setRightAnswer("120");
+			s1.setOption1("147");
+			s1.setOption2("142");
+			s1.setOption3("150");
+			s1.setOption4("138");
+			s1.setRightAnswer("147");
 			s1.setDificultyLevel("Hard");
-			s1.setCategory("simplification");
+			s1.setCategory("Simplification");
 
 			Question s2 = new Question();
-			s2.setQuestionTilte("√1444 + 18.5 × 4 - 96 ÷ 3");
-			s2.setOption1("116");
-			s2.setOption2("112");
-			s2.setOption3("120");
-			s2.setOption4("108");
-			s2.setRightAnswer("112");
-			s2.setDificultyLevel("Hard");
-			s2.setCategory("simplification");
+			s2.setQuestionTilte("√1764 + (25% of 320) - 18");
+			s2.setOption1("104");
+			s2.setOption2("102");
+			s2.setOption3("100");
+			s2.setOption4("106");
+			s2.setRightAnswer("104");
+			s2.setDificultyLevel("Medium");
+			s2.setCategory("Simplification");
 
 			Question s3 = new Question();
-			s3.setQuestionTilte("225% of 96 - (14.4 × 3) + 22");
-			s3.setOption1("160");
-			s3.setOption2("165");
-			s3.setOption3("150");
-			s3.setOption4("155");
-			s3.setRightAnswer("160");
+			s3.setQuestionTilte("∛2197 + (4/7 of 210) - 15");
+			s3.setOption1("118");
+			s3.setOption2("120");
+			s3.setOption3("115");
+			s3.setOption4("125");
+			s3.setRightAnswer("118");
 			s3.setDificultyLevel("Hard");
-			s3.setCategory("simplification");
+			s3.setCategory("Simplification");
 
 			Question s4 = new Question();
-			s4.setQuestionTilte("(56 ÷ 7) × (15.6 ÷ 1.3) + 12.5");
-			s4.setOption1("107.5");
-			s4.setOption2("96");
-			s4.setOption3("102");
-			s4.setOption4("110");
-			s4.setRightAnswer("107.5");
+			s4.setQuestionTilte("16² ÷ 8 × 5 + 20% of 150");
+			s4.setOption1("190");
+			s4.setOption2("200");
+			s4.setOption3("210");
+			s4.setOption4("180");
+			s4.setRightAnswer("190");
 			s4.setDificultyLevel("Hard");
-			s4.setCategory("simplification");
+			s4.setCategory("Simplification");
 
 			Question s5 = new Question();
-			s5.setQuestionTilte("78.4 - 16.8 + 24.5 × 3 - √625");
-			s5.setOption1("122.1");
-			s5.setOption2("118.1");
-			s5.setOption3("120.1");
-			s5.setOption4("116.1");
-			s5.setRightAnswer("122.1");
-			s5.setDificultyLevel("Hard");
-			s5.setCategory("simplification");
+			s5.setQuestionTilte("(5/8 of 320) + √900 - 12");
+			s5.setOption1("218");
+			s5.setOption2("220");
+			s5.setOption3("215");
+			s5.setOption4("210");
+			s5.setRightAnswer("218");
+			s5.setDificultyLevel("Medium");
+			s5.setCategory("Simplification");
 
 			Question s6 = new Question();
-			s6.setQuestionTilte("48 × 2.5 + (18% of 240) - 36 ÷ 1.5");
-			s6.setOption1("150");
-			s6.setOption2("160");
-			s6.setOption3("168");
-			s6.setOption4("174");
-			s6.setRightAnswer("168");
+			s6.setQuestionTilte("62.4 ÷ 1.6 × 2.5 + 15% of 200");
+			s6.setOption1("127.5");
+			s6.setOption2("125");
+			s6.setOption3("130");
+			s6.setOption4("135");
+			s6.setRightAnswer("127.5");
 			s6.setDificultyLevel("Hard");
-			s6.setCategory("simplification");
+			s6.setCategory("Simplification");
 
 			Question s7 = new Question();
-			s7.setQuestionTilte("(45.5 × 4) - (22.75 × 2) + 18");
-			s7.setOption1("140");
-			s7.setOption2("135");
-			s7.setOption3("125");
-			s7.setOption4("132");
-			s7.setRightAnswer("132");
-			s7.setDificultyLevel("Hard");
-			s7.setCategory("simplification");
+			s7.setQuestionTilte("{(48 + 32) ÷ 4} × 5 - 30% of 200");
+			s7.setOption1("40");
+			s7.setOption2("45");
+			s7.setOption3("50");
+			s7.setOption4("35");
+			s7.setRightAnswer("40");
+			s7.setDificultyLevel("Medium");
+			s7.setCategory("Simplification");
 
 			Question s8 = new Question();
-			s8.setQuestionTilte("(32% of 750) + 19.2 ÷ 0.4");
-			s8.setOption1("316");
-			s8.setOption2("300");
-			s8.setOption3("310");
-			s8.setOption4("326");
-			s8.setRightAnswer("316");
-			s8.setDificultyLevel("Hard");
-			s8.setCategory("simplification");
+			s8.setQuestionTilte("(9/16 of 256) + (3/4 of 120) - 18");
+			s8.setOption1("216");
+			s8.setOption2("210");
+			s8.setOption3("204");
+			s8.setOption4("198");
+			s8.setRightAnswer("216");
+			s8.setDificultyLevel("Medium");
+			s8.setCategory("Simplification");
 
 			Question s9 = new Question();
-			s9.setQuestionTilte("144 ÷ 1.2 + 36 × 1.5 - 72");
-			s9.setOption1("180");
-			s9.setOption2("162");
-			s9.setOption3("168");
-			s9.setOption4("174");
-			s9.setRightAnswer("174");
+			s9.setQuestionTilte("√2025 ÷ 1.5 + 36.4 ÷ 1.4");
+			s9.setOption1("56");
+			s9.setOption2("58");
+			s9.setOption3("60");
+			s9.setOption4("54");
+			s9.setRightAnswer("56");
 			s9.setDificultyLevel("Hard");
-			s9.setCategory("simplification");
+			s9.setCategory("Simplification");
 
 			Question s10 = new Question();
-			s10.setQuestionTilte("96 ÷ 0.75 + 12.5 × 4 - √1296");
-			s10.setOption1("152");
-			s10.setOption2("160");
-			s10.setOption3("148");
-			s10.setOption4("158");
-			s10.setRightAnswer("160");
-			s10.setDificultyLevel("Hard");
-			s10.setCategory("simplification");
+			s10.setQuestionTilte("40% of 250 + 20% of 300 - 15% of 200");
+			s10.setOption1("130");
+			s10.setOption2("120");
+			s10.setOption3("140");
+			s10.setOption4("150");
+			s10.setRightAnswer("130");
+			s10.setDificultyLevel("Medium");
+			s10.setCategory("Simplification");
+
+			// ================= End of Set =================
 
 			repository.save(s1);
 			repository.save(s2);
