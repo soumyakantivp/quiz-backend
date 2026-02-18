@@ -127,12 +127,13 @@ public class QuizApplication {
 			repository.save(s3);
 			repository.save(s4);
 			repository.save(s5);
+			/*
 			repository.save(s6);
 			repository.save(s7);
 			repository.save(s8);
 			repository.save(s9);
 			repository.save(s10);
-
+			*/
 			System.out.println("Simplification Questions Inserted!");
 		};
 	}

@@ -12,6 +12,7 @@ public class QuestionResponse implements ResponseJSON<QuestionResponse,Question>
     private String option2;
     private String option3;
     private String option4;
+    private String rightAnswer;
 
     @Autowired
     QuestionDao questionRepo;
@@ -64,6 +65,14 @@ public class QuestionResponse implements ResponseJSON<QuestionResponse,Question>
         this.option4 = option4;
     }
 
+    public String getRightAnswer() {
+        return rightAnswer;
+    }
+
+    public void setRightAnswer(String rightAnswer) {
+        this.rightAnswer = rightAnswer;
+    }
+
     @Override
     public Optional<QuestionResponse> maptoResponse(Question question) {
         if(question == null) return Optional.empty();
@@ -74,6 +83,7 @@ public class QuestionResponse implements ResponseJSON<QuestionResponse,Question>
         qr.setOption2(question.getOption2());
         qr.setOption3(question.getOption3());
         qr.setOption4(question.getOption4());
+        qr.setRightAnswer(question.getRightAnswer());
         return Optional.of(qr);
     }
 }

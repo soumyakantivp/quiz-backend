@@ -25,7 +25,10 @@ public class OllamaController {
             produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<String> askStream(@RequestBody String prompt) {
 
-        return service.streamGenerate(prompt);
+        return service.streamGenerate(prompt)
+                .doOnNext(chunk -> System.out.println("AI stream: " + chunk))
+                .doOnError(err -> System.err.println("Stream error: " + err.getMessage()))
+                .doOnComplete(() -> System.out.println("Stream completed"));
     }
 }
 
